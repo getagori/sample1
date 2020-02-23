@@ -1,0 +1,8 @@
+<h1>思い出一覧</h1>
+<% if user_signed_in? %>
+  <% @items.each do |item|  %>
+    <p><%= item.name %>:<%= item.message %></p>
+    <% end %>
+<% else %>
+    <p>ログインしてください。</p>
+<% end %>

@@ -1,0 +1,6 @@
+<%= form_for @item, method: :post do |f| %>
+<h1>思い出</h1>
+<p>名前<%= f.text_field :name %></p>
+<p>思い出<%= f.text_field :message %></p>
+<input type = "submit" value = "送信">
+<% end %>
